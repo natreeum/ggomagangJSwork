@@ -130,7 +130,7 @@ try {
   console.log(`6번 오답입니다.❌`);
 }
 
-if (question7 === question7 + 661023) {
+if (question7 === 612423 + 661023) {
   console.log(`7번 정답입니다.⭕️`);
 } else console.log(`7번 오답입니다.❌`);
 
