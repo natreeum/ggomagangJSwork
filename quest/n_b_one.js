@@ -22,48 +22,41 @@ let question3 = true;
 
 // 문제 4번 : 값을 바꿀 수 없고 값이 100인 변수 "question4"을 선언하세요.
 
-/* 여기에 코드를 작성하세요 */
 const question4 = 100;
-
-const rate = 50;
 
 // 문제 5번 : 값을 바꿀 수 있고 값이 100인 변수 "question5"을 선언하세요.
 
-/* 여기에 코드를 작성하세요 */
 let question5 = 100;
 
 // 문제 6번 : num1 과 num2는 랜덤한 숫자입니다. 두 변수를 더한 값을 갖는 변수 "question6"를 선언하세요.
 
-/* 여기에 코드를 작성하세요 */
-// const question6 = num1 + num2;
-let question6 = num1 + num2;
+const question6 = num1 + num2
 
 // 문제 7번 : question7변수의 값에 661023을 더하는 값을 할당하세요.
-question7 += 661023;
+question7 = question7 + 661023;
 
 //배열에 대한 이해
 
 // 문제 8번 : 빈 배열 question8 을 선언하세요.
 
-/* 여기에 코드를 작성하세요 */
-const question8 = [];
+const question8 = []
 
 // 문제 9번 : QArr배열이 선언되어있습니다. QArr에서 1번 인덱스를 갖고있는 값을 출력하기 위해 빈칸을 채우세요.
 const QArr = [num1, num2];
-const question9 = QArr[1];
-// console.log(question9);
+const question9 = qarr[1];
+//console.log(question9);
 
 // 문제 10번 : QArr2배열이 선언되어있습니다. QArr2에서 0번 인덱스와 3번 인덱스의 값을 더하여 question10에 저장하세요.
 const QArr2 = [num1, num2, num3, num4];
-const question10 = QArr2[0] + QArr2[3];
+const question10 = qarr2[0] + qarr[3];
 
 //함수에 대한 이해
 
 // 문제 11번 : 두개의 인자를 받고, 두 인자의 곱한값에서 더한 값을 빼는 함수를 작성하세요.
 // 아래 코드 주석을 해제한 후 문제를 푸세요
 
-function question11(num1, num2) {
-  return num1 * num2 - (num1 + num2);
+function question11(a,b) {
+return (a * b)-(a + b);
 }
 
 //조건문과 반목문에 대한 이해
@@ -71,11 +64,28 @@ function question11(num1, num2) {
 // 문제 12번 : flag가 false일 때 question12변수에 5를 3번 더하는 조건문과 반복문을 작성하세요.
 // 아래 코드 주석을 해제한 후 문제를 푸세요
 
-const flag = false;
-let question12 = 0;
-let cnt = 0;
-if (flag == false) {
-}
+// const flag = false;   i don't know !!
+// let question12 = 0;
+// let cnt = 0;
+// if (__) {
+//   for (_; _; _) {
+//     _;
+//     cnt++;
+//   }
+// }
+
+
+// 터미널에 오류가 생깁니다. 
+// SyntaxError: Unexpected end of input
+at Object.compileFunction (node:vm:360:18)
+at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+at Module._compile (node:internal/modules/cjs/loader:1090:27)
+at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)        
+at Module.load (node:internal/modules/cjs/loader:1004:32)
+at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+
+at node:internal/main/run_main_module:17:47
 
 /*==============================================================================================================================*/
 /*아래는 테스트를 위한 코드로 건드리지 마세요. */

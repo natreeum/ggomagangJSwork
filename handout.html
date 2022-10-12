@@ -342,6 +342,58 @@ mul(num1, num2);
 <li>일주일 동안 받은 질문들에 대해 다시한번 짚어줍니다.</li>
 <li>코드 저장소 / 버전 컨트롤 배워보기</li>
 </ul>
+<p>Git : 분산형 버전 관리 시스템<br>
+GitHub : 분산형 버전관리시스템인 Git을 사용할 수 있게 해주는 홈페이지.</p>
+<p><code>git 구조</code></p>
+<ul>
+<li>Workspace</li>
+<li>Staging Area</li>
+<li>Local Git Repository</li>
+<li>Remote Git Repository</li>
+</ul>
+<p>Workspace : 현재 내가 직접 접근가능한(생성, 수정, 삭제) 영역  {황무지}<br>
+Staging Area : Commit 되기 전에 파일들을 저장하는 공간  {파레트}<br>
+Local Git Repository : 내 디바이스에 저장되는 코드저장  {창고(아무데도하고 연결안돼있음 나만 접근 가능하고 내가 대형창고로 옮겨야됨)}<br>
+Remote Git Repository : 웹 상에 저장되는 코드저장소  {대형 창고(다른 사람들이 접근가능함)}</p>
+<p>혼자 작업할 때, 내가 작성한 코드를 웹 코드저장소에 저장하는 법<br>
+<img src="https://cdn.discordapp.com/attachments/1013490661858738209/1026822163694637086/unknown.png" width = 500px></p>
+<ol>
+<li><code>git init</code> 현재 디렉토리를 git 디렉토리로 관리합니다.<br></li>
+<li><code>git add [파일이름]</code> 파일을 stagingArea로 올립니다. : 왜 ? =&gt; commit 하기 전 git에서 파일관리<br></li>
+<li><code>git commit -m &quot;커밋 메세지&quot;</code> stagingArea에 올라가 있는 파일을 local git repository에 저장합니다.</li>
+<li><code>git push [remote repository 주소] [브랜치 이름]</code></li>
+</ol>
+<br>
+<br>
+git init 전(파일이 아무데나 굴러다님)<br>
+<img src="https://cdn.discordapp.com/attachments/1013490661858738209/1026827489990934579/unknown.png" width = 400>
+<br>
+git init 후(파일이 아무데나 굴러다니지만 파레트(staging area), 창고(local repository)가 생김)<br>
+<img src="https://cdn.discordapp.com/attachments/1013490661858738209/1026827628214239243/unknown.png" width = 400>
+<br>
+git add 후(파레트(staging area)위에 파일이 잘 정리됨)<br>
+<img src="https://cdn.discordapp.com/attachments/1013490661858738209/1026828178204917760/unknown.png" width = 400><br>
+git commit -m "This is Commit"(파레트(staging area)에 "this is commit" 이름을 붙여서 정리된 파일을 창고로 옮김)<br>
+<img src="https://cdn.discordapp.com/attachments/1013490661858738209/1026828817144217681/unknown.png" width = 400><br>
+git push [remote 주소] [branch이름]<br>
+<img src="https://cdn.discordapp.com/attachments/1013490661858738209/1026831198871359508/unknown.png" width = 400><br>
+git pull [remote 주소] [branch이름]<br>
+<img src="https://cdn.discordapp.com/attachments/1013490661858738209/1026831771104456734/unknown.png" width = 400><br>
+<br>
+<p>이외의 명령어
+git clone : remote repository에 있는 파일을 다운로드<br>
+git status : 현재 git 상태를 봄 ; 실습 ㄱ ㄱ<br>
+git restore : commit 되지 않은 파일에 대한 변경사항 폐기<br>
+git reset : commit 된 기록을 삭제함 (git reset HEAD^)</p>
+<p><code>PullRequest (pr)</code><br>
+: 파일에 대해 내가 수정한 부분을 파일에 합쳐주세요!!</p>
+<pre><code><code><div>과제
+git을 활용해서 저번 주 과제를 제출해보기
+</div></code></code></pre>
+<br>
+<br>
+<br>
+<br>
 <h3 id="3주차-discordjs">3주차 [discord.js]</h3>
 <ul>
 <li>ping pong 봇 만들기</li>
